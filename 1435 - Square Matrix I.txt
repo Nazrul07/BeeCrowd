@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,k,n,p,nn=1;
+    while(1)
+    {
+        scanf("%d",&n);
+        int a[n][n];
+        if(n==0)break;
+        p=n/2;
+        if(n%2==1)p++;
+
+        for(k=0 ; k<p ; k++)
+        {
+            for(i=k ; i<n-k ; i++)
+            {
+                for(j=k ; j<n-k ; j++)
+                {
+                    a[i][j]=nn;
+                }
+            }
+        nn++;
+        }
+        nn=1;
+        for(i=0 ; i<n ; i++)
+        {
+            for(j=0 ; j<n ; j++)
+            {
+                if(j==0)
+                    printf("%3d",a[i][j]);
+                else
+                    printf(" %3d",a[i][j]);
+            }
+            printf("\n");
+        }
+    printf("\n");
+    }
+}

@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int test,i,x,sum=0,count=0;
+    scanf("%d",&x);
+    while(x!=0)
+    {
+        while(count!=5)
+        {
+            if(x%2==0)
+            {
+                sum=sum+x;
+                count++;
+            }
+            x++;
+        }
+        printf("%d\n",sum);
+        sum=0;
+        count=0;
+        scanf("%d",&x);
+    }
+    return 0;
+}

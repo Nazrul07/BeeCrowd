@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int test,i,pa,pb,count;
+    float ra,rb;
+    scanf("%d",&test);
+    for(i=1 ; i<=test ; i++)
+    {
+        scanf("%d%d%f%f",&pa,&pb,&ra,&rb);
+        count=0;
+        while(pa<=pb)
+        {
+            pa=pa+pa*(ra/100);
+            pb=pb+pb*(rb/100);
+            count++;
+            if(count>100)
+            {
+                printf("Mais de 1 seculo.\n");
+                break;
+            }
+        }
+        if(count<=100)
+            printf("%d anos.\n",count);
+    }
+    return 0;
+}

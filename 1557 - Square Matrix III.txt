@@ -1,0 +1,95 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,k=2,p=1,x,n;
+    while(1)
+    {
+        k=2;
+        p=1;
+        scanf("%d",&x);
+        if(x==0)break;
+        int a[x][x];
+        for(i=0 ; i<x ; i++)
+        {
+            for(j=0 ; j<x ; j++)
+            {
+                a[i][j]=p;
+                p=p*2;
+            }
+        p=k;
+        k=k*2;
+        }
+        for(i=0 ; i<x ; i++)
+        {
+            for(j=0 ; j<x ; j++)
+            {
+                if(x==1 || x==2)
+                {
+                if(j==0)
+                    printf("%d",a[i][j]);
+                else
+                    printf(" %d",a[i][j]);
+                }
+                else if(x==3 || x==4)
+                {
+                if(j==0)
+                    printf("%2d",a[i][j]);
+                else
+                    printf(" %2d",a[i][j]);
+                }
+                else if(x==5)
+                {
+                if(j==0)
+                    printf("%3d",a[i][j]);
+                else
+                    printf(" %3d",a[i][j]);
+                }
+                else if(x==6 || x==7)
+                {
+                if(j==0)
+                    printf("%4d",a[i][j]);
+                else
+                    printf(" %4d",a[i][j]);
+                }
+                else if(x==8 || x==9)
+                {
+                if(j==0)
+                    printf("%5d",a[i][j]);
+                else
+                    printf(" %5d",a[i][j]);
+                }
+                else if(x==10)
+                {
+                if(j==0)
+                    printf("%6d",a[i][j]);
+                else
+                    printf(" %6d",a[i][j]);
+                }
+                else if(x==11 || x==12)
+                {
+                if(j==0)
+                    printf("%7d",a[i][j]);
+                else
+                    printf(" %7d",a[i][j]);
+                }
+                else if(x==13 || x==14)
+                {
+                if(j==0)
+                    printf("%8d",a[i][j]);
+                else
+                    printf(" %8d",a[i][j]);
+                }
+                else if(x==15)
+                {
+                if(j==0)
+                    printf("%9d",a[i][j]);
+                else
+                    printf(" %9d",a[i][j]);
+                }
+            }
+            printf("\n");
+        }
+        printf("\n");
+    }
+    return 0;
+}

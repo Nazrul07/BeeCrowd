@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t,i,a,b,sum;
+    cin>>t;
+    string s1,s2,s3,s4;
+    for(i=0 ; i<t ; i++)
+    {
+        cin>>s1>>s2>>s3>>s4;
+        cin>>a>>b;
+        sum=a+b;
+        if(sum%2==0)
+        {
+            if(s2=="PAR")
+            {
+                cout<<s1;
+            }
+            else
+            {
+                cout<<s3;
+            }
+        }
+        else
+        {
+            if(s2=="IMPAR")
+            {
+                cout<<s1;
+            }
+            else
+            {
+                cout<<s3;
+            }
+        }
+        cout<<endl;
+    }
+    return 0;
+}

@@ -1,0 +1,57 @@
+#include<stdio.h>
+int main()
+{
+    int x,i,j,p=1,m=0;
+    while(1)
+    {
+    scanf("%d",&x);
+    if(x==0)break;
+    int arr[x][x];
+    for(i=0 ; i<x ; i++)
+    {
+        p=p+i;
+        for(j=0 ; j<x ; j++)
+        {
+            if(i==0)
+            {
+                arr[i][j]=p;
+                p++;
+            }
+            else
+            {
+                arr[i][j]=p;
+                if(m!=1)
+                {
+                    p--;
+                }
+
+                if(p==0)
+                {
+                    m=1;
+                    p++;
+                }
+
+                if(m==1)
+                {
+                    p++;
+                }
+            }
+        }
+        p=1;
+        m=0;
+    }
+    for(i=0 ; i<x ; i++)
+    {
+        for(j=0 ; j<x ; j++)
+        {
+            if(j==0)
+                printf("%3d",arr[i][j]);
+            else
+                printf(" %3d",arr[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    }
+    return 0;
+}

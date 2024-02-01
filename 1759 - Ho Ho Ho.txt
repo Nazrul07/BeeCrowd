@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int test,i;
+    scanf("%d",&test);
+    for(i=1 ; i<=test ; i++)
+    {
+        if(i==1)printf("Ho");
+        else if(i==test)printf(" Ho!\n");
+        else
+            printf(" Ho");
+    }
+    return 0;
+}

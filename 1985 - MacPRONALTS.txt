@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t,p,q;
+    double sum=0;
+    cin>>t;
+    for(int i=0 ; i<t ; i++)
+    {
+        cin>>p>>q;
+        switch(p)
+        {
+        case 1001:
+        {
+            sum=sum+(1.50*q);
+            break;
+        }
+        case 1002:
+        {
+            sum=sum+(2.50*q);
+            break;
+        }
+        case 1003:
+        {
+            sum=sum+(3.50*q);
+            break;
+        }
+        case 1004:
+        {
+            sum=sum+(4.5*q);
+            break;
+        }
+        case 1005:
+            {
+                sum=sum+(5.50*q);
+                break;
+            }
+        }
+    }
+    cout<<fixed<<setprecision(2)<<sum<<endl;
+    return 0;
+}

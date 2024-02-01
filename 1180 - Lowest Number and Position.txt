@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int test,min,n,i,a;
+    scanf("%d",&test);
+    for(i=0 ; i<test ; i++)
+    {
+        scanf("%d",&a);
+        if(i==0)
+            min=a;
+        if(min>=a)
+        {
+            min=a;
+            n=i;
+        }
+    }
+    printf("Menor valor: %d\n",min);
+    printf("Posicao: %d\n",n);
+}

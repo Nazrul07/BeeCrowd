@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    float a,sum=0,count=0,test=1;
+    while(test!=2)
+    {
+        scanf("%f",&a);
+        while(count!=2)
+        {
+            if(a<0 || a>10)
+                printf("nota invalida\n");
+            else
+            {
+                count++;
+                sum=sum+a;
+            }
+            if(count!=2)
+                scanf("%f",&a);
+        }
+
+        printf("media = %.2f\n",sum/2);
+        printf("novo calculo (1-sim 2-nao)\n");
+        scanf("%f",&test);
+        count=0;
+        sum=0;
+
+        while(test>2)
+        {
+            printf("novo calculo (1-sim 2-nao)\n");
+            scanf("%f",&test);
+        }
+    }
+}

@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int x,i,j,test;
+    scanf("%d",&test);
+    for(j=1 ; j<=test ; j++)
+    {
+        scanf("%d",&x);
+        for(i=2 ; i<x ; i++)
+        {
+            if(x%i==0)
+                break;
+        }
+        if(i!=x)
+            printf("%d nao eh primo\n",x);
+        else
+            printf("%d eh primo\n",x);
+   }
+    return 0;
+}

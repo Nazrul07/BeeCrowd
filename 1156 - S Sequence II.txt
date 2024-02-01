@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    float sum=1,i,j=3,k=2;
+    for(i=1 ; j!=41 ; i++)
+    {
+        sum=sum+(j/k);
+        j=j+2;
+        k=k*2;
+    }
+    printf("%.2f\n",sum);
+}

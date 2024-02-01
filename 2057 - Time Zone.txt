@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int s,t,f,t_z;
+    cin>>s>>t>>f;
+    if(s==0)
+    {
+        t_z=24+t+f;
+        if(t_z>=24)
+            t_z=t_z-24;
+    }
+    else
+    {
+        t_z=s+t+f;
+        if(t_z>=24)
+            t_z=t_z-24;
+    }
+    cout<<t_z<<endl;
+    return 0;
+}

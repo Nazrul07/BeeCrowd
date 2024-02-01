@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int t,i,j;
+    scanf("%d",&t);
+    for(i=0 ; i<1000 ; )
+    {
+        for(j=0 ; j<=t-1 ; j++)
+        {
+            if(i>999)
+                break;
+            printf("N[%d] = %d\n",i,j);
+            i++;
+        }
+    }
+}

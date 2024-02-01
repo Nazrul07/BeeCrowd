@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int test,i,a,p=1,min;
+    scanf("%d",&test);
+    for(i=1 ; i<=test ; i++)
+    {
+        scanf("%d",&a);
+        if(i==1)
+            min=a;
+        else
+        {
+            if(min>a)
+            {
+                min=a;
+                p=i;
+            }
+        }
+    }
+    printf("%d\n",p);
+}

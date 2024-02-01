@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t,i;
+    cin>>t;
+    int a[t];
+    for(i=0 ; i<t ; i++)
+    {
+        cin>>a[i];
+        int temp=a[i]-2015;
+        if(temp>=0) cout<<temp+1<<" A.C."<<endl;
+        else
+            cout<<abs(temp)<<" D.C."<<endl;
+    }
+    return 0;
+}

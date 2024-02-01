@@ -1,0 +1,66 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,temp;
+    cin>>n;
+    if(n>=900)
+    {
+        cout<<"CM";
+        n=n-900;
+        if(n>=90)
+        {
+            cout<<"XC";
+            n=n-90;
+        }
+        else
+        {
+            cout<<"L";
+            n=n-50;
+        }
+    }
+    else
+    {
+        if(n>=500)
+        {
+            cout<<"D";
+            n=n-500;
+        }
+        if(n>=100)
+        {
+            temp=n/100;
+            n=n%100;
+            if(temp==1)cout<<"C";
+            else if(temp==2)cout<<"CC";
+            else if(temp==3)cout<<"CCC";
+            else if(temp==4)cout<<"CD";
+        }
+        if(n>=90)
+        {
+            cout<<"XC";
+            n=n-90;
+        }
+        if(n<90 && n>=50)
+        {
+            cout<<"L";
+            n=n-50;
+        }
+    }
+    temp=n/10;
+    n=n%10;
+    if(temp==1)cout<<"X";
+    else if(temp==2)cout<<"XX";
+    else if(temp==3)cout<<"XXX";
+    else if(temp==4)cout<<"XL";
+    if(n==1)cout<<"I";
+    else if(n==2)cout<<"II";
+    else if(n==3)cout<<"III";
+    else if(n==4)cout<<"IV";
+    else if(n==5)cout<<"V";
+    else if(n==6)cout<<"VI";
+    else if(n==7)cout<<"VII";
+    else if(n==8)cout<<"VIII";
+    else if(n==9)cout<<"IX";
+    cout<<endl;
+    return 0;
+}

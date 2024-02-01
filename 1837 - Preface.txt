@@ -1,0 +1,17 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int a,b,q,r;
+    cin>>a>>b;
+    for(r=0 ; r<abs(b) ; r++)
+    {
+        q=(a-r)/b;
+        if((b*q+r)==a)
+        {
+            cout<<q<<" "<<r<<endl;
+        }
+    }
+    return 0;
+}

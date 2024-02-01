@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double v,d,area,h,r;
+    while(cin>>v>>d)
+    {
+        r=d/2;
+        area=3.14*r*r;
+        h=v/(3.14*r*r);
+        cout<<"ALTURA = "<<fixed<<setprecision(2)<<h<<endl;
+        cout<<"AREA = "<<fixed<<setprecision(2)<<area<<endl;
+    }
+    return 0;
+}

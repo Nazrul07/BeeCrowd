@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    float a,sum=0.0;
+    int count=0;
+    scanf("%f",&a);
+    while(count!=2)
+    {
+        if(a<0.0 || a>10.0)
+          printf("nota invalida\n");
+        else
+        {
+            count++;
+            sum=sum+a;
+        }
+    if(count==2)
+      continue;
+    scanf("%f",&a);
+    }
+    printf("media = %.2f\n",sum/2);
+    return 0;
+}

@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    long double x;
+    scanf("%llf",&x);
+    printf("%+.4LE\n",x);
+    return 0;
+}

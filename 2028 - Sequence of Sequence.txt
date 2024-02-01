@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,c=0,total,i,j;
+    while(cin>>n)
+    {
+        c++;
+        total=(n*(n+1))/2;
+        total++;
+        if(n==0)
+            cout<<"Caso "<<c<<": "<<total<<" numero"<<endl;
+        else
+            cout<<"Caso "<<c<<": "<<total<<" numeros"<<endl;
+        for(i=0 ; i<=n ; i++)
+        {
+            if(i==0)cout<<i;
+            for(j=1 ; j<=i ; j++)
+            {
+                cout<<" "<<i;
+            }
+        }
+        cout<<endl<<endl;
+    }
+    return 0;
+}

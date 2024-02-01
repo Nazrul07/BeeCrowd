@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,a[5],count=0,A,B,C,D,E;
+    cin>>n;
+    cin>>A>>B>>C>>D>>E;
+    if(A==n)count++;
+    if(B==n)count++;
+    if(C==n)count++;
+    if(D==n)count++;
+    if(E==n)count++;
+    cout<<count<<endl;
+    return 0;
+}

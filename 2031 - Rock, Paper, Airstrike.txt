@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t,i;
+    cin>>t;
+    string s1,s2;
+    for(i=0 ; i<t ; i++)
+    {
+        cin>>s1>>s2;
+        if(s1=="ataque" && s2=="pedra")
+            cout<<"Jogador 1 venceu"<<endl;
+        else if(s2=="ataque" && s1=="pedra")
+            cout<<"Jogador 2 venceu"<<endl;
+        else if(s1=="pedra" && s2=="papel")
+            cout<<"Jogador 1 venceu"<<endl;
+        else if(s2=="pedra" && s1=="papel")
+            cout<<"Jogador 2 venceu"<<endl;
+        else if(s1=="ataque" && s2=="papel")
+            cout<<"Jogador 1 venceu"<<endl;
+        else if(s2=="ataque" && s1=="papel")
+            cout<<"Jogador 2 venceu"<<endl;
+        else if(s1=="papel" && s2=="papel")
+            cout<<"Ambos venceram"<<endl;
+        else if(s1=="pedra" && s2=="pedra")
+            cout<<"Sem ganhador"<<endl;
+        else if(s1=="ataque" && s2=="ataque")
+            cout<<"Aniquilacao mutua"<<endl;
+    }
+    return 0;
+}
