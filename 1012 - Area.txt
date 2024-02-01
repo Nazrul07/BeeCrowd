@@ -1,0 +1,17 @@
+#include<stdio.h>
+#define PI 3.14159
+int main()
+{
+    float a,b,h,tri,cir,tra,qua,rec;
+    scanf("%f%f%f",&a,&b,&h);
+    tri=(a*h)/2;
+    cir=PI*h*h;
+    tra=0.5*(a+b)*h;
+    qua=b*b;
+    rec=a*b;
+    printf("TRIANGULO: %.3f\n",tri);
+    printf("CIRCULO: %.3f\n",cir);
+    printf("TRAPEZIO: %.3f\n",tra);
+    printf("QUADRADO: %.3f\n",qua);
+    printf("RETANGULO: %.3f\n",rec);
+}
