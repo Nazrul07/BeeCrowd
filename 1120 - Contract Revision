@@ -1,0 +1,51 @@
+#include <bits/stdc++.h>
+#define ll long long int
+#define mod 1000000007
+using namespace std;
+void solve()
+{
+    string a,b;
+    cin>>a>>b;
+    while(a!="0" || b!="0")
+    {
+        string new_string="0";
+        for(int i=0 ; i<b.size() ; i++)
+        {
+            if(b[i]!=a[0])
+            {
+                new_string+=b[i];
+            }
+        }
+        bool f=false;
+        for(int i=0 ; i<new_string.size() ; i++)
+        {
+            if(new_string[i]!='0')
+            {
+                f=true;
+            }
+            if(f)
+            {
+                cout<<new_string[i];
+            }
+        }
+        if(f==false)
+        {
+            cout<<0;
+        }
+        cout<<endl;
+        cin>>a>>b;
+    }
+}
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    int tc=1;
+    //cin >> tc;
+    while (tc--)
+    {
+        solve();
+    }
+    return 0;
+}
